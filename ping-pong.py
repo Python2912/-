@@ -1,7 +1,7 @@
 import pygame
 from random import randint
 pygame.init()
-class GameSprite(pygame.sprite.Sprite):
+class GameSprite(pygame.sprite.Sprite):# родительский класс
     def __init__(self, player_image,player_x, player_y, size_x, size_y, player_speed):
         super().__init__()
         self.image = pygame.transform.scale(pygame.image.load(player_image), (size_x, size_y))
